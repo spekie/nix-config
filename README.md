@@ -1,13 +1,13 @@
 # My NixOS config
 
-![](/.github/screenshot.png)
+![](screenshot.png)
 
 # Installation
 
 On a newly installed NixOS system, clone this repository:
 
 ```bash
-nix-shell -p git --command 'git clone https://github.com/spekie/nixos.git'
+nix-shell -p git --command 'git clone https://github.com/spekie/nix-config.git'
 ```
 
 ## Configure

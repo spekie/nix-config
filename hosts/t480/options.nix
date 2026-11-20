@@ -22,6 +22,7 @@
     ncdu
     htop
     btop
+    keepassxc
   ];
 
   username = "spekie";

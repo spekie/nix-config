@@ -31,11 +31,9 @@
   hm.wayland.windowManager.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
+    checkConfig = false;
 
     config = rec {
-      startup = [
-        {command = "swaybg -i ${config.wallpaperPath} -m fill";}
-      ];
       defaultWorkspace = "workspace number 1";
 
       colors.focused = {
@@ -60,14 +58,22 @@
     };
 
     config.output = {
-      "DP-3" = {
-        mode = "1920x1080@144Hz";
+      "*" = {
+        bg = "${config.wallpaperPath} fill";
       };
     };
 
     config.input = {
       "type:pointer" = {
         accel_profile = "flat";
+      };
+      "type:keyboard" = {
+        xkb_layout = "us";
+        xkb_variant = "altgr-intl";
+        xkb_numlock = "enabled";
+      };
+      "type:touchpad" = {
+        tap = "enabled";
       };
     };
 

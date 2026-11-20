@@ -10,9 +10,9 @@
       "${modifier}+Return" = "exec ${terminal}";
       "${modifier}+d" = "exec ${menu}";
       "${modifier}+q" = "kill";
-      "${modifier}+Shift+q" = "exec 'swaymsg exit'";
-      "${modifier}+s" = "exec 'grim'";
-      "${modifier}+Shift+s" = "exec 'grim -g \"$(slurp)\"'";
+      "${modifier}+Shift+q" = "exec swaymsg exit";
+      "${modifier}+s" = "exec grim";
+      "${modifier}+Shift+s" = "exec grim -g \"$(slurp)\"";
     
       "${modifier}+h" = "focus left";
       "${modifier}+j" = "focus down";

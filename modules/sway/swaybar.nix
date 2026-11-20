@@ -8,7 +8,6 @@
   hm.wayland.windowManager.sway.config.bars = [{
     statusCommand = "i3blocks";
     position = "top";
-    trayOutput = "none";
 
     fonts = {
       names = [ "Roboto Mono" "pango:RobotoMono Nerd Font" ];

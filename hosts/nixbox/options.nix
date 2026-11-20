@@ -23,6 +23,8 @@
     ncdu
     htop
     btop
+    keepassxc
+    qbittorrent
   ];
 
   username = "spekie";

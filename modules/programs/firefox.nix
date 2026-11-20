@@ -19,6 +19,7 @@
         "extensions.getAddons.showPane" = false;
         "media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
         "general.autoScroll" = true;
+	"browser.nova.enabled" = false;
 
         # Disable DRM
         "media.gmp-widevinecdm.enabled" = false;

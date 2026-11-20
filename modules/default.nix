@@ -6,8 +6,9 @@
     ./home-manager.nix
     ./nh.nix
     ./fonts.nix
-    ./xdg.nix
     ./gui.nix
+    ./boot.nix
+    ./settings.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -17,15 +18,7 @@
     wget
     tree
     git
+    xdg-utils
+    xdg-user-dirs
   ];
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nixpkgs.config.allowUnfree = true;
-
-  hardware.graphics.enable = true;
-
-  boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
-    tmp.cleanOnBoot = true;
-  };
 }
