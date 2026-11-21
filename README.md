@@ -7,7 +7,7 @@
 On a newly installed NixOS system, clone this repository:
 
 ```bash
-nix-shell -p git --command 'git clone https://github.com/spekie/nix-config.git'
+nix-shell -p git --command 'git clone https://gitlab.com/spekie/nix-config.git'
 ```
 
 ## Configure
